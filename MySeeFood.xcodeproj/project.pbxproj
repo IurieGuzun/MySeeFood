@@ -13,10 +13,11 @@
 		8A670C59246E118000324E92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A670C57246E118000324E92 /* Main.storyboard */; };
 		8A670C5B246E118100324E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A670C5A246E118100324E92 /* Assets.xcassets */; };
 		8A670C5E246E118100324E92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A670C5C246E118100324E92 /* LaunchScreen.storyboard */; };
+		8A94D825246ECD1A00E6633C /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8A94D824246ECD1A00E6633C /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A670C4E246E118000324E92 /* SeeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A670C4E246E118000324E92 /* MySeeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySeeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A670C51246E118000324E92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A670C53246E118000324E92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8A670C55246E118000324E92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		8A670C5A246E118100324E92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A670C5D246E118100324E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A670C5F246E118100324E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A94D824246ECD1A00E6633C /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		8A670C4F246E118000324E92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A670C4E246E118000324E92 /* SeeFood.app */,
+				8A670C4E246E118000324E92 /* MySeeFood.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +61,7 @@
 				8A670C51246E118000324E92 /* AppDelegate.swift */,
 				8A670C53246E118000324E92 /* SceneDelegate.swift */,
 				8A670C55246E118000324E92 /* ViewController.swift */,
+				8A94D824246ECD1A00E6633C /* Inceptionv3.mlmodel */,
 				8A670C57246E118000324E92 /* Main.storyboard */,
 				8A670C5A246E118100324E92 /* Assets.xcassets */,
 				8A670C5C246E118100324E92 /* LaunchScreen.storyboard */,
@@ -70,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8A670C4D246E118000324E92 /* SeeFood */ = {
+		8A670C4D246E118000324E92 /* MySeeFood */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A670C62246E118100324E92 /* Build configuration list for PBXNativeTarget "SeeFood" */;
+			buildConfigurationList = 8A670C62246E118100324E92 /* Build configuration list for PBXNativeTarget "MySeeFood" */;
 			buildPhases = (
 				8A670C4A246E118000324E92 /* Sources */,
 				8A670C4B246E118000324E92 /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = SeeFood;
+			name = MySeeFood;
 			productName = SeeFood;
-			productReference = 8A670C4E246E118000324E92 /* SeeFood.app */;
+			productReference = 8A670C4E246E118000324E92 /* MySeeFood.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8A670C49246E118000324E92 /* Build configuration list for PBXProject "SeeFood" */;
+			buildConfigurationList = 8A670C49246E118000324E92 /* Build configuration list for PBXProject "MySeeFood" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A670C4D246E118000324E92 /* SeeFood */,
+				8A670C4D246E118000324E92 /* MySeeFood */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A670C56246E118000324E92 /* ViewController.swift in Sources */,
+				8A94D825246ECD1A00E6633C /* Inceptionv3.mlmodel in Sources */,
 				8A670C52246E118000324E92 /* AppDelegate.swift in Sources */,
 				8A670C54246E118000324E92 /* SceneDelegate.swift in Sources */,
 			);
@@ -321,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8A670C49246E118000324E92 /* Build configuration list for PBXProject "SeeFood" */ = {
+		8A670C49246E118000324E92 /* Build configuration list for PBXProject "MySeeFood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A670C60246E118100324E92 /* Debug */,
@@ -330,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A670C62246E118100324E92 /* Build configuration list for PBXNativeTarget "SeeFood" */ = {
+		8A670C62246E118100324E92 /* Build configuration list for PBXNativeTarget "MySeeFood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A670C63246E118100324E92 /* Debug */,
