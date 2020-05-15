@@ -30,6 +30,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             guard let ciimage = CIImage(image: userPickedImage) else {
                 fatalError("Could not convert UIImage to CIImage!")
             }
+            detect(image: ciimage)
         }
         imagePicker.dismiss(animated: true, completion: nil)
     }
@@ -42,6 +43,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             guard let results = request.results as? [VNClassificationObservation] else {
                 fatalError("Model failed to process image.")
             }
+            print(results)
+        }
+        let handler = VNImageRequestHandler(ciImage: image)
+        do {
+            try handler.perform([request])
+        }
+        catch {
+            print(error)
         }
     }
     
